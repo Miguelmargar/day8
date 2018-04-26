@@ -27,7 +27,9 @@ button {
 }
 
 .scoredes {
+    color: #cc00cc;
     font-size: 35px;
     font-weight: bolder;
+    margin-top: 65px;
     
 }

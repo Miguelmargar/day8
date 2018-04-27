@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" type="text/css" />
+         <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="bulb.js"></script>
     <title>JavaScript</title>
 </head>
 <body>
-    <button onclick="lightOn()">Turn the light on</button>
+    <button class="lightOn">Turn the light on</button>
     <img src="img/bulboff.gif" id="bulbImage" width="100">
     <h2 id="heading">Switch on the light please</h2>
-    <button onclick="lightOff()">Turn the light off</button>
+    <button class="lightOff">Turn the light off</button>
     
+   <!-- below is like the above but without Jquery
     <script>
         function lightOn() {
             document.getElementById("bulbImage").src = "img/bulbon.gif";
@@ -23,5 +26,6 @@
             document.getElementById("heading").textContent = "Switch on the light please"
         }
     </script>
+    -->
 </body>
 </html>

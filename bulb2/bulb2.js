@@ -12,16 +12,4 @@ $(document).ready(function() {
                 $("h2").text("Switch the light on please");  
             };
     });
-    
-    /*
-    $("button").click(function() {
-        if ($("img").attr("src") === "../img/bulbon.gif") {
-            $("img").attr("src", "../img/bulboff.gif");
-            $("button").text("Switch On");
-            $("h2").text("Switch the light on please");
-        };
-    });
-
-    */
-    
 })

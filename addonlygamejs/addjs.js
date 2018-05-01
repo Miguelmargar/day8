@@ -1,6 +1,5 @@
-let
-ansForm = document.getElementById("answerForm"),
-challenge = document.getElementById("question");
+let ansForm = document.getElementById("answerForm")
+let challenge = document.getElementById("question");
     
 function addQuiz() {
     let num1 = Math.floor(Math.random() * 11);
@@ -8,7 +7,7 @@ function addQuiz() {
     
     challenge.textContent = "How much is: " + num1 + " + " + num2 + "?";
     
-    //ansForm["rightAnswer"].value = (num1 + num2);
+    ansForm["rightAnswer"].value = (num1 + num2);
     }
 addQuiz();
    /*
@@ -20,5 +19,4 @@ function checkAnswer() {
     }
     ansForm["answer"].value = "";
 }
-   
    */ 

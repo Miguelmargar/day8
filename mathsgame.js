@@ -49,6 +49,7 @@ function addquiz() {
     
     answerForm["rightAnswer"].value = (num1 + num2);
 }
+
 addquiz();
 
 function subquiz() {

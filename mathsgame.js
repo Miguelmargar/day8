@@ -28,6 +28,7 @@ function checkAnswer() {
         score++;
     } else {
         alert("Oh no! A wrong answer: (");
+        score--;
     }
     answerForm["answer"].value = "";
     scorebox.textContent = score;
@@ -43,7 +44,7 @@ function checkAnswer() {
 
 function addquiz() {
     let num1 = Math.floor(Math.random() * 50);
-    let num2 = Math.floor(Math.random()* 50);
+    let num2 = Math.floor(Math.random() * 50);
     
     questionbox.textContent = "What is: " + num1 + " + " + num2 + "?";
     
@@ -56,13 +57,13 @@ function subquiz() {
     let num1 = Math.floor(Math.random() * 50);
     let num2 = Math.floor(Math.random()* 50);
     
-    if (num1 > num2) {
+    if (num1 >= num2) {
         questionbox.textContent = "What is: " + num1 + " - " + num2 + "?";
+        answerForm["rightAnswer"].value = (num1 - num2);
     } else if (num1 < num2) {
         questionbox.textContent = "What is: " + num2 + " - " + num1 + "?";
+        answerForm["rightAnswer"].value = (num2 - num1);
     }
-    
-    answerForm["rightAnswer"].value = (num1 - num2);
 }
 subquiz();
 
